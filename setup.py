@@ -18,7 +18,6 @@ setup(
         'numpy==1.16.4', 
         'Keras==2.2.4',
         'tensorflow==1.14.0',
-        'phe==1.4.0'
     ],
     url='https://github.com/Musketeer-H2020/RobustMMLL'
 )

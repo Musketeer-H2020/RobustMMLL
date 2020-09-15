@@ -30,4 +30,4 @@ Currently the library is in beta phase, and it only supports the following Priva
 
 Please, visit the following git repository that contains a collection of demos that illustrate the usage of this library:
 
-[MMLL-demo](https://github.com/Musketeer-H2020/MMLL-demo)
+[RobustMMLL-demo](https://github.com/Musketeer-H2020/RobustMMLL-demo)
