@@ -7,16 +7,10 @@ Musketeer Machine Learning Library with Robustness
 
 ## Dependencies
 
-* `pika v0.13.0`
-* `transitions v0.6.9`
-* `pygraphviz v1.5`
-* `dill`
 * `scikit-learn`
-* `matplotlib`
 * `numpy v1.16.4` 
 * `Keras v2.2.4`
 * `tensorflow v1.14.0`
-* `phe==1.4.0`
 
 ## Content
 
