@@ -4,14 +4,11 @@ Local Communications library (Flask Server)
 '''
 __author__ = "IBM Research, Ireland"
 
-import logging
 import requests
 import json
 import time
 import pickle
 import base64
-
-#logger = logging.getLogger(__name__)
 
 
 def is_jsonable(x):
