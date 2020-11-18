@@ -140,7 +140,7 @@ class POM1_CommonML_Master(POM1ML):
             packet = None
             sender = None
             try:
-                packet = self.comms.receive_poms_123(timeout=0.1) # We only receive a dictionary at a time even if there are more than 1 workers
+                packet = self.comms.receive_poms_123(timeout=10) # We only receive a dictionary at a time even if there are more than 1 workers
                 try:  # For the pycloudmessenger cloud
                     sender = packet.notification['participant']
                 except Exception: # For the pycloudmessenger local
