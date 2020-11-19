@@ -237,7 +237,7 @@ class POM1_CommonML_Worker(POM1ML):
             packet = None
             sender = None
             try:
-                packet = self.comms.receive_poms_123(timeout=0.1)
+                packet = self.comms.receive_poms_123(timeout=10)
                 packet = packet.content
                 sender = 'Master'
                 self.display(self.name + ' %s: Received %s from %s' % (self.worker_address, packet['action'], sender))
