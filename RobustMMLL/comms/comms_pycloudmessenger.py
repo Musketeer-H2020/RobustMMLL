@@ -4,7 +4,7 @@ Comms interface to pycloudmessenger
 @author:  Angel Navia Vázquez
 '''
 __author__ = "Angel Navia Vázquez, UC3M."
-
+import tenacity
 import random, string
 import time
 '''
@@ -97,7 +97,7 @@ class Comms_master:
             raise
         return message
 
-
+    @tenacity.retry(stop=tenacity.stop_after_attempt(5), wait=tenacity.wait_random(min=1, max=3))
     def receive_poms_123(self, timeout=10):
         with self.commsffl:
             packet = self.commsffl.receive(timeout)            
@@ -147,7 +147,7 @@ class Comms_worker:
             raise
         return message
 
-
+    @tenacity.retry(stop=tenacity.stop_after_attempt(5), wait=tenacity.wait_random(min=1, max=3))
     def receive_poms_123(self, timeout=10):
         with self.commsffl:
             packet = self.commsffl.receive(timeout)            
